@@ -1,0 +1,21 @@
+//Crear un programa que eleve un numero a un exponente usando la clase Math.
+
+import java.util.Scanner;
+class Main {
+  
+  public static void main(String[]args) {
+
+    double base, exponente, total;
+
+    Scanner Teclado = new Scanner (System.in);
+
+    System.out.println("Ingrese su base");
+    base=Teclado.nextDouble(); 
+    System.out.println("Ingrese su exponente");
+    exponente=Teclado.nextInt(); 
+     
+    total=Math.pow(base, exponente);
+
+    System.out.println("El resultado es " +total);
+}
+}

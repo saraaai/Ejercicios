@@ -1,0 +1,36 @@
+//En una universidad, en todas las materias se asignará un puntaje extra de acuerdo al resultado que los alumnos hayan obtenido en el primer laboratorio.
+//Las preguntas a realizar son:
+//¿Cumple usted todas las reglas establecidas por la universidad? (1-siempre, 2-no 3- A veces).
+//¿Qué nota obtuvo en el primer laboratorio?
+
+import java.util.Scanner;
+class Main {
+  
+  public static void main(String[]args) {
+
+    int reglas;
+    Double nota;
+
+    Scanner Teclado = new Scanner (System.in);
+
+    System.out.println("Usted cumple con las reglas de la universidad?");
+    System.out.println("1. Siempre \n 2. Aveces \n 3. Nunca");
+    reglas=Teclado.nextInt(); 
+    System.out.println("Que nota obtuvo en el laboratorio?");
+    nota=Teclado.nextDouble(); 
+
+    if (reglas==1){
+      if (nota>=8 && nota<=10){
+        nota=10.0;
+      } else System.out.println("Nota invalida");
+    }
+     else if (reglas == 2){
+       if (nota<6) {
+         nota=nota+0.5;
+       } else if (nota >=6 && nota <8){
+         nota=nota+0.7;
+       } else System.out.println("Nota invalida");
+     } else System.out.println("Usted debe cumplir las reglas");
+    System.out.println("La nueva nota es "+nota);
+}
+}

@@ -1,0 +1,16 @@
+//Escribir un programa que solicite al usuario una letra y, si es una vocal, muestre el mensaje “es vocal”. 
+import java.util.Scanner;
+class Main {
+  
+  public static void main(String[]args) {
+
+    char letra;
+
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Ingrese su letra");
+    letra=sc.next().charAt(0);
+    
+    if (letra=='a'||letra=='e'||letra=='i'||letra=='o'||letra=='u') {System.out.println("Es vocal");}
+    else System.out.println("no es vocal");
+}
+}

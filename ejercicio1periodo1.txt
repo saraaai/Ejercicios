@@ -1,0 +1,27 @@
+//Crear un programa que pida por teclado tres notas de un alumno, calcule el promedio e imprima alguno de estos mensajes:
+//Si el promedio es >=7 mostrar "Promocionado".
+//Si el promedio es >=4 y <7 mostrar "Regular".
+//Si el promedio es <4 mostrar "Reprobado".
+
+import java.util.Scanner;
+class Main {
+  
+  public static void main(String[]args) {
+
+    int nota1, nota2, nota3, prom;
+
+    Scanner Teclado = new Scanner (System.in);
+
+    System.out.println("Ingrese su primera nota");
+    nota1=Teclado.nextInt(); 
+    System.out.println("Ingrese su segunda nota");
+    nota2=Teclado.nextInt(); 
+    System.out.println("Ingrese su tercera nota");
+    nota3=Teclado.nextInt(); 
+    prom=(nota1+nota2+nota3)/3;
+
+    if (prom<4) {System.out.println("Reprobado");}
+    if (prom>=4&&prom<7) {System.out.println("Regular");}
+    if (prom>=7) {System.out.println("Promocionado");}
+}
+}

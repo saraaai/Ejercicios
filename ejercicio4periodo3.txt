@@ -1,0 +1,15 @@
+//Realice un programa que permita obtener el factorial de un número dado por el usuario, utilizando la instrucción do-while.
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    int n, m=1, fact=1;
+    Scanner Teclado = new Scanner (System.in);
+    System.out.println("Su número");
+    n=Teclado.nextInt();
+    do {
+      fact=fact*m;
+      m++;
+    } while (m<=n);
+    System.out.println("El factorial es "+fact);    
+  }
+}

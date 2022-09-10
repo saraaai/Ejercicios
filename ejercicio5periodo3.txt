@@ -1,0 +1,22 @@
+//Escribir un programa que solicite la carga de un numero entre 0 y 999, y nos muestre un mensaje de cuantos dígitos tiene el mismo. Finalizar el programa cuando se cargue el valor 0.
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    int n;
+    Scanner Teclado = new Scanner (System.in);
+    System.out.println("Su número");
+    n=Teclado.nextInt();
+    do {
+      System.out.println("Su número");
+      n=Teclado.nextInt();
+      if (n>=100) {
+        System.out.println("Su número es de 3 cifras");
+      } else if (n>=10) {
+        System.out.println("Su número es de 2 cifras");
+      } else {
+        System.out.println("Su número es de 1 cifra");
+      }
+    } while (n!=0);
+    
+  }
+}

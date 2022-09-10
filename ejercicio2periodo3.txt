@@ -1,0 +1,19 @@
+//Escribir un algoritmo para calcular la potencia de dos números (base y exponente), éstos serán ingresados por el usuario y deben ser positivos. No se debe usar ninguna función de las que trae java para obtener la potencia, es decir debe calcularla de manera manual.
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    int valor, exp, i=0, valor2;
+    Scanner Teclado = new Scanner (System.in);
+    System.out.println("Ingrese su numero ");
+    valor=Teclado.nextInt(); 
+    valor2=valor;
+    System.out.println("Ingrese su exponente ");
+    exp=Teclado.nextInt();
+    while(i<=exp){
+      System.out.println(valor2);
+      valor2=valor2*valor;
+      i++;
+      
+    }
+  }
+}

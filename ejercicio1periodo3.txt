@@ -1,0 +1,13 @@
+//Mostrar los múltiplos de 8 hasta el valor 500. Debe aparecer en pantalla 8 - 16 - 24, etc.
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    int valori=8;
+    Scanner Teclado = new Scanner (System.in);
+    System.out.println("Multiplos de 8 hasta 500");
+    while(valori<=500){
+      System.out.println(valori+ ", ");
+      valori+=8;
+    }
+  }
+}

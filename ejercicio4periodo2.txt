@@ -1,0 +1,13 @@
+//Genere un programa que muestre los valores desde 100 hasta 1.
+import java.util.Scanner;
+class Main {
+  
+  public static void main(String[]args) {
+    Scanner Teclado = new Scanner (System.in);
+
+    for (int i=100;  i>=1; i--){
+      System.out.println(" El valor de i = " + i);
+    }
+
+}
+}

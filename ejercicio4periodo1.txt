@@ -1,0 +1,16 @@
+//calcular la raíz cuadrada y cree los procedimientos para leer el numero desde el teclado,
+import java.util.Scanner;
+class Main {
+  
+  public static void main(String[]args) {
+
+    double num, raiz;
+
+    Scanner Teclado = new Scanner (System.in);
+
+    System.out.println("Ingrese su numero");
+    num=Teclado.nextDouble(); 
+    raiz=Math.sqrt(num);
+    System.out.println("La raiz del numero es " +raiz);
+}
+}

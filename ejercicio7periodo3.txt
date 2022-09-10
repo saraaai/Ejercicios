@@ -1,0 +1,17 @@
+//Programa que muestra como imprimir un rango de números en forma decreciente
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    int n, m, cont, ans;
+    Scanner Teclado = new Scanner (System.in);
+    System.out.println("Ingrese su primer numero");
+    n=Teclado.nextInt();
+    System.out.println("Ingrese su segundo numero");
+    m=Teclado.nextInt();
+    cont=n;
+    while(cont>m){
+      System.out.println(cont);
+      cont--;
+    }
+  }
+}
